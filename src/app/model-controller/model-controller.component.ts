@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-typography',
-  templateUrl: './typography.component.html',
-  styleUrls: ['./typography.component.css']
+  selector: 'app-model-controller',
+  templateUrl: './model-controller.component.html',
+  styleUrls: ['./model-controller.component.css']
 })
 export class TypographyComponent implements OnInit {
 

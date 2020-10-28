@@ -8,10 +8,11 @@ declare interface RouteInfo {
   class: string;
 }
 export const ROUTES: RouteInfo[] = [
-  { path: '/actuator', title: 'Actuadores', icon: 'add', class: '' },
-  { path: '/sensor', title: 'Sensor', icon: 'add', class: '' },
-  { path: '/table-list', title: 'Controladores', icon: 'content_paste', class: '' },
-  // { path: '/typography', title: 'Typography', icon: 'library_books', class: '' },
+  
+  { path: '/model-controller', title: 'Modelo Controlador', icon: 'add_box', class: '' },
+  { path: '/actuator', title: 'Actuadores', icon: 'add_box', class: '' },
+  { path: '/sensor', title: 'Sensor', icon: 'add_box', class: '' },
+  { path: '/table-list', title: 'Controladores', icon: 'library_books', class: '' },
   // { path: '/notifications', title: 'Notifications', icon: 'notifications', class: '' },
   // { path: '/upgrade', title: 'Upgrade to PRO', icon: 'unarchive', class: 'active-pro' },
 ];

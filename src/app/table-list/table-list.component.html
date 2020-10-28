@@ -4,6 +4,211 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header card-header-danger">
+                        <h2 class="card-title ">Controladores</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <div class="table-wrapper">
+                                <div class="table-title">
+                                    <div class="row">
+                                        
+                                        <div class="col-sm-6">
+                                            <a href="#addActuatorModal" class="btn btn-success" data-toggle="modal"><i
+                                                    class="material-icons"></i>
+                                                <span>Nuevo Controlador</span></a>
+                                                <a href="#addcontroladorModelo" class="btn btn-success" data-toggle="modal"><i
+                                                    class="material-icons"></i>
+                                                <span>Modelo Controlador</span></a>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <span class="custom-checkbox">
+                                                </span>
+                                            </th>
+                                            <th>Id</th>
+                                            <th>Id Cliente</th>
+                                            <th>Id Modelo</th>
+                                            <th>Nombre</th>
+                                            <th>Comportamiento</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="custom-checkbox">
+                                                    <!-- <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                                    <label for="checkbox1"></label> -->
+                                                </span>
+                                            </td>
+                                            <td>01</td>
+                                            <td>1Angel</td>
+                                            <td>098T </td>
+                                            <td>Activo</td>
+                                            <td>
+                
+                                                <a href="#editActuatorModal" class="edit" data-toggle="modal"><i class="material-icons"
+                                                        data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                
+                                                <a href="#deleteActuatorModal" class="delete" data-toggle="modal"><i
+                                                        class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="custom-checkbox">
+                                                    <!-- <input type="checkbox" id="checkbox2" name="options[]" value="1">
+                                                    <label for="checkbox2"></label> -->
+                                                </span>
+                                            </td>
+                                            <td>02</td>
+                                            <td>actuador2</td>
+                                            <td>USA</td>
+                                            <td>Activo</td>
+                                            <td>
+                                                <a href="#editActuatorModal" class="edit" data-toggle="modal"><i class="material-icons"
+                                                        data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                                <a href="#deleteActuatorModal" class="delete" data-toggle="modal"><i
+                                                        class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nuevo Modal Controlador HTML -->
+                    <div id="addActuatorModal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form>
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Agregar Controlador</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label>Id</label>
+                                            <input type="input" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Id Cliente</label>
+                                            <input type="input" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Id Modelo</label>
+                                            <input type="input" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nombre</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>                                  
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                        <input type="submit" class="btn btn-success" value="Añadir">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nuevo Modelo Controlador HTML -->
+                    <div id="addcontroladorModelo" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form>
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Agregar Modelo Controlador</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label>Id</label>
+                                            <input type="input" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nombre</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>                                  
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                        <input type="submit" class="btn btn-success" value="Añadir">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Editar Modal HTML -->
+                    <div id="editActuatorModal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form>
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Editar Actuador</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label>id</label>
+                                            <input type="number" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nombre</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Modelo</label>
+                                            <textarea class="form-control" required></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Descripción</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                        <input type="submit" class="btn btn-info" value="Guardar">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Eliminar Modal HTML -->
+                    <div id="deleteActuatorModal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form>
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Eliminar Actuador</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>¿Está seguro de que desea eliminar estos registros?</p>
+                                        <p class="text-warning"><small>Esta acción no se puede deshacer.</small></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                        <input type="submit" class="btn btn-danger" value="Eliminar">
+                                    </div>
+                                </form>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
                         <h4 class="card-title ">Detalle Sensores</h4>
                     </div>
                     <div class="card-body">

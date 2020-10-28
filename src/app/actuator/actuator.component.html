@@ -23,9 +23,11 @@
                                 </span>
                             </th>
                             <th>Id</th>
+                            <th>Id Client</th>
                             <th>Nombre</th>
-                            <th>Modelo</th>
-                            <th>Descripción</th>
+                            <th>Estado</th>
+                            <th>Notificación</th>
+                            <th>Ip</th>
                             <th>Comportamiento</th>
                         </tr>
                     </thead>
@@ -38,9 +40,11 @@
                                 </span>
                             </td>
                             <td>01</td>
-                            <td>actuador1</td>
-                            <td>USA</td>
-                            <td>Para el uso de riego</td>
+                            <td>1Angel</td>
+                            <td>Angel T </td>
+                            <td>Activo</td>
+                            <td>Email</td>
+                            <td>192.168.100.1</td>
                             <td>
 
                                 <a href="#editActuatorModal" class="edit" data-toggle="modal"><i class="material-icons"
@@ -60,7 +64,9 @@
                             <td>02</td>
                             <td>actuador2</td>
                             <td>USA</td>
-                            <td>Para el uso de riego</td>
+                            <td>Activo</td>
+                            <td>Email</td>
+                            <td>192.168.100.15</td>
                             <td>
                                 <a href="#editActuatorModal" class="edit" data-toggle="modal"><i class="material-icons"
                                         data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -85,20 +91,29 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label>Id</label>
-                            <input type="number" class="form-control" required>
+                            <input type="input" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Id Cliente</label>
+                            <input type="input" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Nombre</label>
                             <input type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Modelo</label>
-                            <input type="text" class="form-control" required>
+                            <label>Estado</label>
+                            <input type="checkbox" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Descripción</label>
+                            <label>Notificación</label>
                             <textarea class="form-control" required></textarea>
                         </div>
+                        <div class="form-group">
+                            <label>IP</label>
+                            <input type="number" class="form-control" required>
+                        </div>
+                        
                     </div>
                     <div class="modal-footer">
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">

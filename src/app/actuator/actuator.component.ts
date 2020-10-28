@@ -7,6 +7,7 @@ import * as Chartist from 'chartist';
   styleUrls: ['./actuator.component.css']
 })
 export class ActuatorComponent implements OnInit {
+  
 
   constructor() { }
   startAnimationForLineChart(chart) {

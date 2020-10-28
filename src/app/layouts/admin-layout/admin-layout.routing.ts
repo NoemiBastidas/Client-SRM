@@ -4,7 +4,7 @@ import { ActuatorComponent } from '../../actuator/actuator.component';
 import { SensorComponent } from '../../sensor/sensor.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
 import { TableListComponent } from '../../table-list/table-list.component';
-import { TypographyComponent } from '../../typography/typography.component';
+// import { ModelControllerComponent } from '../../model-controller/model-controller.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
@@ -55,7 +55,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'sensor', component: SensorComponent },
     { path: 'user-profile', component: UserProfileComponent },
     { path: 'table-list', component: TableListComponent },
-    { path: 'typography', component: TypographyComponent },
+    // { path: 'model-controller', component: ModelControllerComponent },
     { path: 'notifications', component: NotificationsComponent },
     { path: 'upgrade', component: UpgradeComponent },
 ];

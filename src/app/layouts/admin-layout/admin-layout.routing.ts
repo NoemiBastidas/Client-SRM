@@ -4,9 +4,7 @@ import { ActuatorComponent } from '../../actuator/actuator.component';
 import { SensorComponent } from '../../sensor/sensor.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
 import { TableListComponent } from '../../table-list/table-list.component';
-// import { ModelControllerComponent } from '../../model-controller/model-controller.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
-import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -44,18 +42,11 @@ export const AdminLayoutRoutes: Routes = [
     //         path: 'typography',
     //         component: TypographyComponent
     //     }]
-    // }, {
-    //     path: '',
-    //     children: [ {
-    //         path: 'upgrade',
-    //         component: UpgradeComponent
-    //     }]
+    // }
     // }
     { path: 'actuator', component: ActuatorComponent },
     { path: 'sensor', component: SensorComponent },
     { path: 'user-profile', component: UserProfileComponent },
     { path: 'table-list', component: TableListComponent },
-    // { path: 'model-controller', component: ModelControllerComponent },
     { path: 'notifications', component: NotificationsComponent },
-    { path: 'upgrade', component: UpgradeComponent },
 ];

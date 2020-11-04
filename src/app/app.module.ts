@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
 import { ActuatorComponent } from './actuator/actuator.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { TableListComponent } from './table-list/table-list.component';
-import { NotificationsComponent } from './notifications/notifications.component';
+import { ModelosComponent } from './modelos/modelos.component';
 
 import {
   AgmCoreModule

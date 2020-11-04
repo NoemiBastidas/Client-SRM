@@ -4,8 +4,8 @@
       <div class="col-md-8">
         <div class="card">
           <div class="card-header card-header-danger">
-            <h4 class="card-title">Editar Perfil</h4>
-            <p class="card-category">Completa tu perfil</p>
+            <h4 class="card-title">Perfil Cliente</h4>
+            <!-- <p class="card-category">Completa tu perfil</p> -->
           </div>
           <div class="card-body">
             <form>
@@ -17,34 +17,46 @@
                 </div>
                 <div class="col-md-3">
                   <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Nombre de Usuario">
+                    <input matInput placeholder="Id Usuario" type="number">
                   </mat-form-field>
                 </div>
                 <div class="col-md-4">
                   <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Nombre" type="text">
+                  </mat-form-field>
+                  <!-- <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Correo Electrónico " type="email">
+                  </mat-form-field> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Nombre" type="text">
+                  </mat-form-field> -->
+                  <mat-form-field class="example-full-width">
                     <input matInput placeholder="Correo Electrónico " type="email">
                   </mat-form-field>
                 </div>
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Contraseña" type="password">
+                  </mat-form-field>
+                </div>
               </div>
               <div class="row">
                 <div class="col-md-6">
                   <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Nombre" type="text">
+                    <input matInput placeholder="Dirección 1" type="text">
                   </mat-form-field>
                 </div>
                 <div class="col-md-6">
                   <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Apellido" type="text">
+                    <input matInput placeholder="Dirección 2" type="text">
                   </mat-form-field>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Dirección" type="text">
-                  </mat-form-field>
-                </div>
-              </div>
+
               <div class="row">
                 <div class="col-md-4">
                   <mat-form-field class="example-full-width">
@@ -62,15 +74,75 @@
                   </mat-form-field>
                 </div>
               </div>
+
               <div class="row">
-                <div class="col-md-12">
-                  <label>Sobre mi</label>
+                <div class="col-md-4">
                   <mat-form-field class="example-full-width">
-                    <textarea matInput placeholder="Descripción sobre sus habilidades, virtudes y destrezas"></textarea>
+                    <input matInput placeholder="Id Región" type="number">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Teléfono" type="text">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Id País" type="number">
                   </mat-form-field>
                 </div>
               </div>
-              <button mat-raised-button type="submit" class="btn btn-danger pull-right">Actualizar Perfil</button>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Id Estado" type="number">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Clave" type="text">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Creado en" type="time">
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Dominio" type="text">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Zona Horaria" type="text">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Intentos" type="number">
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Bloquedo en" type="time">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Id Telegram" type="text">
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <button mat-raised-button type="submit" class="btn btn-success pull-right">Guardar Cliente</button>
               <div class="clearfix"></div>
             </form>
           </div>

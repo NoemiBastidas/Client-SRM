@@ -14,6 +14,7 @@ export const ROUTES: RouteInfo[] = [
   { path: '/table-list', title: 'Controladores', icon: 'library_books', class: '' },
   { path: '/actuator', title: 'Actuadores', icon: 'add_box', class: '' },
   { path: '/sensor', title: 'Sensor', icon: 'add_box', class: '' },
+  { path: '/user-profile', title: 'Cliente', icon: 'library_books', class: '' },
 
 
 ];
